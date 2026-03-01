@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Cards</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-between align-center gap-30 pad-15">
+            <div class="headerLogo">
+                <h1 class="font-size-18">Container Cards</h1>
+            </div>
+            <nav>
+                <ul class="flex justify-center align-center flex-flow-row gap-10">
+                    <li><a href="#">Doc</a></li>
+                    <li><a href="#">Template</a></li>
+                    <li><a href="#">Style</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="component pad-15">
+            <div class="container flex justify-center align-center flex-flow-row flex-column gap-20 pad-10">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-thirdly">Thirdly Button</button>
+                <button class="btn btn-success">Success Button</button>
+                <button class="btn btn-warning">Warning Button</button>
+                <button class="btn btn-error">Error Button</button>
+            </div>
+            <div class="container flex justify-center align-center flex-flow-row flex-column gap-20 pad-10">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="font-size-16">Card Title</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn">Read More</button>
+                        <button class="btn">Try Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="font-size-16">Card Title</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="font-size-16">Card Title</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container flex justify-center align-center flex-flow-row flex-column gap-20 pad-10">
+                <div class="alert success flex justify-space-between align-center gap-10">
+                    <div>
+                        <span class="alert-icon">200</span>
+                        <span class="alert-message">This is an success message.</span>
+                    </div>
+                    <button class="btn-message" onclick="this.parentElement.classList.add('close')">X</button>
+                </div>
+                <div class="alert warning flex justify-space-between align-center gap-10">
+                    <div>
+                        <span class="alert-icon">500</span>
+                        <span class="alert-message">This is an warning message.</span>
+                    </div>
+                    <button class="btn-message" onclick="this.parentElement.classList.add('close')">X</button>
+                </div>
+                <div class="alert error flex justify-space-between align-center gap-10">
+                    <div>
+                        <span class="alert-icon">404</span>
+                        <span class="alert-message">This is an error message.</span>
+                    </div>
+                    <button class="btn-message" onclick="this.parentElement.classList.add('close')">X</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
